@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACET LMS Login</title>
+    <title>Document</title>
 
     <style>
 
@@ -70,6 +70,19 @@
             text-align: center;
         }
 
+        #SOF {
+            margin: 10px 0;
+            padding: 3px;
+            width: 90%;
+            height: 12%;
+            border: none;
+            border-radius: 10px;
+            background-color: aliceblue;
+            position: relative;
+            left: 3%;
+            text-align: center;
+        }
+
         /*.LoginForm input[type="radio"] {
             position: relative;
             margin: 0;
@@ -80,7 +93,7 @@
         }*/
 
 
-        /*div: Student and Faculty Button Container*/
+        /*div: Student and Faculty Button Container
         .LoginForm .buttonCon {
             margin: 0;
             display: flex;
@@ -88,9 +101,9 @@
             width: 93%;
             left: 3%;
             height: 25%;
-        }
+        }*/
 
-        /*Button: Student and Faculty Button*/
+        /*Button: Student and Faculty Button
         .LoginForm .buttonCon button{
             margin: 0;
             width: 46.66666666666667%;
@@ -107,13 +120,13 @@
         #Button2 {
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
-        }
+        }*/
 
 
-        /*P: Text: Register as a Faculty*/
+        /*P: Text: Register as a Faculty
         .FacReg {
             text-align: center;
-        }
+        }*/
 
         /*Submit Button*/
         #SubBtn {
@@ -137,10 +150,14 @@
             <label for="option1">Student</label>
             <input type="radio" id="option2" name="options" value="option2">
             <label for="option2">Faculty</label><br-->
-            <div class="buttonCon">
+            <!--div class="buttonCon">
                 <button type="button" class="StuBtn" id="Button1" onclick="changeColor1()">Student</button>
                 <button type="button" class="FacBtn" id="Button2" onclick="changeColor2()">Faculty</button>
-            </div>
+            </div-->
+            <select name="SOF" id="SOF">
+                <option value="Student">Student</option>
+                <option value="Faculty">Faculty</option>
+            </select>
             <input type="password" placeholder="password">
 
             <p class="FacReg"><a href="#">Register as a faculty</a></p>
@@ -150,7 +167,7 @@
 </body>
 
 <script>
-    function changeColor1() {
+    /*function changeColor1() {
             // Access the element using document.getElementById
             var element1 = document.getElementById("Button1");
             var element2 = document.getElementById("Button2");
@@ -165,7 +182,7 @@
             // Change the background color using style.backgroundColor
             element1.style.backgroundColor = "green";
             element2.style.backgroundColor = "red";
-        }
+        }*/
 </script>
 
 </html>
